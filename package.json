@@ -1,0 +1,38 @@
+{
+  "name": "littlegame",
+  "version": "1.0.0",
+  "description": "Multi-entrypoint project for marketing campaigns, developed based on vue and hilo",
+  "scripts": {
+    "build": "webpack --config build/webpack.prod.conf.js",
+    "analyz": "cross-env BUNDLE_ANALYZ=true npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hilo",
+    "vue3"
+  ],
+  "author": "Melody",
+  "license": "ISC",
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.4",
+    "cross-env": "^7.0.3",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "glob": "^7.1.6",
+    "html-webpack-plugin": "^4.5.0",
+    "postcss-pxtorem": "^5.1.1",
+    "terser-webpack-plugin": "^5.0.3",
+    "vue-loader": "^16.0.0-beta.3",
+    "webpack": "^5.11.1",
+    "webpack-bundle-analyzer": "^4.3.0",
+    "webpack-cli": "^4.3.0",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "core-js": "^3.8.1",
+    "vue": "^v3.0.0-rc.1",
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^9.0.0",
+    "vue-router": "^4.0.0-alpha.6",
+    "vuex": "^4.0.0-alpha.1"
+  }
+}
