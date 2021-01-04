@@ -24,17 +24,12 @@ let postcssLoaderOptions = {
       ]
     }
   }
- 
+
 module.exports = {
     entry: utils.getMultiEntry( './src/views/**/*.js' ),
     output: {
         path: path.resolve(__dirname, '../dist'),
-        filename: (pathData, assetInfo)=>{
-            // let entryName = pathData.runtime || pathData.Chunk.name || pathData.Chunk;
-            console.log('pathData----', pathData);
-            console.log('assetInfo---', assetInfo);
-            return '[name].js'
-        },
+        filename: '[name].js',
         // publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
         publicPath: './',
     },
